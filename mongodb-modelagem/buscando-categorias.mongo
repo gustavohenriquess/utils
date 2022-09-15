@@ -1,0 +1,20 @@
+db.artigos.find({
+    "categorias": "Programação"
+}).explain("executionStats")
+
+// Mostra como funciona a execuão da query
+
+db.artigos.createIndex({categorias: 1}) 
+// Criando index de por categoria em ordem alfabetica.
+
+
+db.artigos.getIndexes();
+
+db.artigos.createIndex({slug: 1}) 
+
+
+// Index deixa a escrita no banco de dados muito lenta. validar se existe o beneficio da criação
+
+db.artigos.dropIndex('slug_1')
+db.artigos.createIndex({slug: 1}, {unique: true}) 
+

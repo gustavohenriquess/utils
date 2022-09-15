@@ -1,0 +1,30 @@
+db.infoAutores.update({
+    nome: "Gustavo Henrique"
+},
+{
+    $set: {
+        nome: "Gu Henrique"
+    }
+});
+
+db.artigos.update({
+    "autor.nome": "Gustavo Henrique"
+},
+{
+    $set: {
+        "autor.nome": "Gu Henrique"
+    }
+}, {
+    multi: true
+}); 
+
+/*
+
+multi serve para percorrer todos os itens do banco
+
+
+creio que pode ser melhor resolvido com o .updateMany()
+
+
+a performance do banco foi otimizada para leitura e não escrita.
+*/

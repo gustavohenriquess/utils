@@ -1,0 +1,83 @@
+db.artigos.update({}, {
+    $set: {
+        comentarios: []
+    }
+}, {
+    multi: true
+})
+
+
+
+db.artigos.aggregate([{
+        $unwind: "$comentarios"
+    },
+    {
+        "$project": {
+            _id: 0,
+            id_artigo: "$_id",
+            nome: "$comentarios.nome",
+            email: "$comentarios.email",
+            texto: "$comentarios.texto",
+            data: "$comentarios.data",
+
+        }
+    },
+    {
+        $out: "comentarios"
+    }
+])
+
+
+// top 5 comentarios do artigos
+/*
+db.artigos.find({
+    "comentarios": {
+        $exists: true
+    }
+}).forEach(function(artigo) {
+    artigo.comentarios = db.comentarios.find({
+        id_artigo: artigo._id
+    }, {
+        _id: 0,
+        nome: 1,
+        email: 1,
+        texto: 1,
+        data: 1,
+    }).sort({
+        data: -1
+    }).limit(5).toArray();
+
+    db.artigos.save(artigo)
+})
+*/
+
+// Inseri um comentario e remove o ultimo
+db.artigos.update({slug:"visualizando-dados-de-frequencia"},{
+    $pop: {
+        comentarios: 1
+    }
+})
+/*
+var documento = db.artigos.findOneAndUpdate({slug:"visualizando-dados-de-frequencia"},{
+    $push: {
+        comentarios: {
+            $each: [
+                {
+                    nome: "Gustavo",
+                    email: "gh@gh.com",
+                    texto: "legal",
+                    date: ISODate('2020-12-20')
+                }
+            ],
+            $position: 0
+        }
+    }
+}, {returnNewDocument: true})
+
+db.comentarios.insertOne({
+                    id_artigo: documento._id,
+                    nome: "Gustavo",
+                    email: "gh@gh.com",
+                    texto: "legal",
+                    date: ISODate('2020-12-20')
+                })*/

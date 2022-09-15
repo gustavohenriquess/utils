@@ -1,0 +1,12 @@
+db.artigos.insertOne({
+    autor: {
+        nome: "Gabriel Ferreira",
+        descricao: "Escritor do blog da Alura",
+        email: "gabs@alura.com.br",
+        senha: "senha"
+    },
+    slug: "projeto-caelum-nas-faculdades",
+    titulo: "Projeto Caelum nas Faculdades",
+    conteudo: "Por enquanto nós estamos indo apenas até faculdades de São Paulo e cidades próximas, mas nós podemos agendar uma palestra remota! Podemos fazer via Skype ou Hangouts, como eu já fiz com o pessoal da UNIFEOB:",
+    dataCriado: ISODate('2019-06-04')
+})

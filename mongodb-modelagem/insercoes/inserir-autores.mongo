@@ -1,0 +1,14 @@
+db.autores.insertMany([
+    {   
+        nome: "Yuri Matheus",
+        descricao: "Instrutor na Alura",
+        email: "yuri@alura.com.br",
+        senha: "senha"
+    },
+    {
+        nome: "Felipe Nascimento",
+        descricao: "Escritor do blog da Alura",
+        email: "felipe@alura.com.br",
+        senha: "senha"
+    }
+])

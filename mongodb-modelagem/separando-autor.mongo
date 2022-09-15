@@ -1,0 +1,29 @@
+db.artigos.aggregate({
+        $group: {
+            _id: "$autor.email",
+            nome: {
+                $first: "$autor.nome"
+            },
+            email: {
+                $first: "$autor.email"
+            },
+            descricao: {
+                $first: "$autor.descricao"
+            },
+            senha: {
+                $first: "$autor.senha"
+            }
+        }
+    }, {
+        $project: {
+            _id: 0
+        }
+    },
+    {
+        $out: 'infoAutores'
+    }
+
+)
+
+
+

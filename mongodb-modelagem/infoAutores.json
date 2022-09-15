@@ -1,0 +1,33 @@
+[{
+  "_id": {
+    "$oid": "5fde81233b638973cc7871c0"
+  },
+  "nome": "Felipe Nascimento",
+  "email": "felipe@alura.com.br",
+  "descricao": "Escritor do blog da Alura",
+  "senha": "senha"
+},{
+  "_id": {
+    "$oid": "5fde81233b638973cc7871c1"
+  },
+  "nome": "Gu Henrique",
+  "email": "gustavo@alura.com.br",
+  "descricao": "Aluno da Alura",
+  "senha": "senha"
+},{
+  "_id": {
+    "$oid": "5fde81233b638973cc7871c2"
+  },
+  "nome": "Yuri Matheus",
+  "email": "yuri@alura.com.br",
+  "descricao": "Instrutor na Alura",
+  "senha": "senha"
+},{
+  "_id": {
+    "$oid": "5fe0ae0f1f586e2954e9338f"
+  },
+  "nome": "Yan orestes",
+  "email": "yan@caelum.com.br",
+  "senha": "yan123",
+  "descricao": "instrutor na alura"
+}]

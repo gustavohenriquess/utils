@@ -1,0 +1,14 @@
+db.autores.find({
+    "artigos.slug": "projeto-caelum-nas-faculdades"
+})
+
+db.autores.find({
+    "artigos.slug": "projeto-caelum-nas-faculdades"
+},{"artigos.titulo":1,
+"artigos.conteudo":1})
+
+
+db.autores.find({
+    "nome": "Gustavo Henrique"
+},{"artigos.titulo":1,
+"artigos.conteudo":1})

@@ -1,0 +1,41 @@
+
+
+db.artigos.updateOne({ titulo: "Carreira em TI: quais os profissionais mais requisitados no Brasil?"}, { $set: {
+    categorias: ["Programação", "Carreira"] }
+})
+
+db.artigos.updateOne({ titulo: "Visualizando dados de frequência"}, { $set: {
+    categorias: ["Ciência de Dados", "Python"] }
+})
+
+db.artigos.updateOne({ titulo: "Entendendo a geração de chaves com JPA"}, { $set: {
+    categorias: ["Programação", "Java"] }
+})
+
+db.artigos.updateOne({ titulo: "Criando e publicando uma biblioteca Javascript no NPM"}, { $set: {
+    categorias: ["JavaScript", "Bibliotecas"] }
+})
+
+db.artigos.updateOne({ slug: "conhecendo-o-flutter-e-uma-visao-do-desenvolvimento-mobile"}, { $set: {
+    categorias: ["Flutter", "Mobile", "Programação"] }
+})
+
+db.artigos.updateOne({ slug: "como-preparar-uma-aplicacao-react-para-o-deploy"}, { $set: {
+    categorias: ["JavaScript", "Infraestrutura"] }
+})
+
+db.artigos.updateOne({ slug: "como-compartilhar-seu-localhost-de-forma-simplificada-com-o-ngrok"}, { $set: {
+    categorias: ["Redes", "Infraestrutura"] }
+})
+
+db.artigos.updateOne({ slug: "faculdade-e-diploma-sao-necessarios-para-programar"}, { $set: {
+    categorias: ["Carreira"] }
+})
+
+db.artigos.updateOne({ slug: "modelagem-oo-linguagem-oo"}, { $set: {
+categorias: ["Modelagem", "Paradigmas", "Programação"] }
+})
+
+db.artigos.updateOne({ slug: "seu-repositorio-sabe-tudo-sobre-seu-projeto"}, { $set: {
+    categorias: ["Java", "Programação", "Arquitetura"] }
+})

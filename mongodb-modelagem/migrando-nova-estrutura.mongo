@@ -1,0 +1,35 @@
+db.autores.aggregate([{
+        $unwind: "$artigos"
+    },
+    {
+        $project: {
+            _id: 0,
+            "autor.nome": "$nome",
+            "autor.descricao": "$descricao",
+            "autor.email": "$email",
+            "autor.senha": "$senha",
+            slug: "$artigos.slug",
+            titulo: "$artigos.titulo",
+            conteudo: "$artigos.conteudo",
+            dataCriado: "$artigos.dataCriado"
+        }
+    },{
+        $out: "artigos"
+    }
+])
+
+/*
+
+Aggregate ajuda com a remodelar dados já existentes
+
+$unwind pega a subcoleção que eu quero tornar primaria
+
+$project é a nova modelagem
+
+$out é aonde vai ser escrito esse nova modelagem já migrando os dados existentes.
+
+*/
+
+db.autores.drop();
+
+db.getCollectionNames();

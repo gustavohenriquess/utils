@@ -1,0 +1,187 @@
+
+//Insere os comentários
+db.artigos.update({ slug: "visualizando-dados-de-frequencia" },
+    {
+    $set: {
+        comentarios: [
+                {
+                    nome: "Eduardo",
+                    email: "eduardo@example.org",
+                    texto: "Muito bom o post!",
+                    data: ISODate('2019-01-23')
+                },
+                {
+                    nome: "João",
+                    email: "joao@example.org",
+                    texto: "Gostei muito!",
+                    data: ISODate('2019-02-21')
+                },
+                {
+                    nome: "Carlos",
+                    email: "carlos@example.org",
+                    texto: "Não gostei",
+                    data: ISODate('2019-03-10')
+                },
+                {
+                    nome: "Kauê",
+                    email: "kaue@example.org",
+                    texto: "Top",
+                    data: ISODate('2019-04-23')
+                },
+                {
+                    nome: "Daniel",
+                    email: "daniel@example.org",
+                    texto: "Aprendi demais!",
+                    data: ISODate('2019-05-21')
+                },
+                {
+                    nome: "Erick",
+                    email: "erick@example.org",
+                    texto: "Não entendi",
+                    data: ISODate('2019-06-10')
+                },
+                {
+                    nome: "Douglas",
+                    email: "douglas@example.org",
+                    texto: "Artigo muito informativo!",
+                    data: ISODate('2019-07-23')
+                },
+                {
+                    nome: "Manuela",
+                    email: "manuela@example.org",
+                    texto: "Parabéns!",
+                    data: ISODate('2019-08-21')
+                },
+                {
+                    nome: "Beatriz",
+                    email: "beatriz@example.org",
+                    texto: "Acho que não é bem assim",
+                    data: ISODate('2019-09-10')
+                }
+            ]
+        }
+    }
+);
+
+db.artigos.update({ slug: "faculdade-e-diploma-sao-necessarios-para-programar" },
+    {
+    $set: {
+        comentarios: [
+                {
+                    nome: "Douglas",
+                    email: "douglas@example.org",
+                    texto: "Artigo muito informativo!",
+                    data: ISODate('2019-07-23')
+                },
+                {
+                    nome: "Carlos",
+                    email: "carlos@example.org",
+                    texto: "Não gostei",
+                    data: ISODate('2019-03-10')
+                },
+                {
+                    nome: "Kauê",
+                    email: "kaue@example.org",
+                    texto: "Top",
+                    data: ISODate('2019-04-23')
+                },
+                {
+                    nome: "Erick",
+                    email: "erick@example.org",
+                    texto: "Não entendi",
+                    data: ISODate('2019-06-10')
+                },
+                {
+                    nome: "Eduardo",
+                    email: "eduardo@example.org",
+                    texto: "Muito bom o post!",
+                    data: ISODate('2019-01-23')
+                },
+                {
+                    nome: "Manuela",
+                    email: "manuela@example.org",
+                    texto: "Parabéns!",
+                    data: ISODate('2019-08-21')
+                }
+            ]
+        }
+    }
+);
+
+db.artigos.update({ slug: "conhecendo-o-flutter-e-uma-visao-do-desenvolvimento-mobile" },
+    {
+    $set: {
+        comentarios: [
+                {
+                    nome: "Isabela",
+                    email: "isabela@example.org",
+                    texto: "Bacana!",
+                    data: ISODate('2019-01-23')
+                },
+                {
+                    nome: "Tiago",
+                    email: "tiago@example.org",
+                    texto: "Gostei!",
+                    data: ISODate('2019-02-27')
+                },
+                {
+                    nome: "Bianca",
+                    email: "bianca@example.org",
+                    texto: "Não gostei",
+                    data: ISODate('2019-03-14')
+                },
+                {
+                    nome: "José",
+                    email: "jose@example.org",
+                    texto: "Gostei!",
+                    data: ISODate('2019-04-24')
+                },
+                {
+                    nome: "Júlio",
+                    email: "julio@example.org",
+                    texto: "show!",
+                    data: ISODate('2019-05-28')
+                },
+                {
+                    nome: "Matheus",
+                    email: "matheus@example.org",
+                    texto: "gostei",
+                    data: ISODate('2019-06-16')
+                },
+                {
+                    nome: "Melissa",
+                    email: "melissa@example.org",
+                    texto: "bom!",
+                    data: ISODate('2019-07-22')
+                }
+            ]
+        }
+    }
+);
+
+db.artigos.update({ slug: "criando-e-publicando-uma-biblioteca-javascript-no-npm" },
+    {
+    $set: {
+        comentarios: [
+                {
+                    nome: "Júlio",
+                    email: "julio@example.org",
+                    texto: "show!",
+                    data: ISODate('2019-05-24')
+                },
+                {
+                    nome: "Matheus",
+                    email: "matheus@example.org",
+                    texto: "gostei",
+                    data: ISODate('2019-06-12')
+                },
+                {
+                    nome: "Melissa",
+                    email: "melissa@example.org",
+                    texto: "bom!",
+                    data: ISODate('2019-07-23')
+                }
+            ]
+        }
+    }
+);

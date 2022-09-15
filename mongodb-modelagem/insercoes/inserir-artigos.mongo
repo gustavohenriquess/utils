@@ -1,0 +1,51 @@
+
+db.autores.update({nome: "Gustavo Henrique"}, { $set: {
+    artigos: [
+        {
+            slug: "faculdade-e-diploma-sao-necessarios-para-programar",
+            titulo: "Faculdade e diploma são necessários para programar?",
+            conteudo: "Será que precisamos de um diploma de uma renomada faculdade para ter uma carreira em tecnologia, em especial na programação?",
+            dataCriado: ISODate('2019-08-06')
+        },
+        {
+            slug:"carreira-em-ti-quais-os-profissionais-mais-requisitados-no-brasil",
+            titulo: "Carreira em TI: quais os profissionais mais requisitados no Brasil?",
+            conteudo: "Você procura capacitação para o mercado de trabalho, mas tem dúvidas sobre qual profissão seguir? Está com medo de ir por um caminho com pouca oferta de emprego? Então, que tal pensar com carinho em escolher alguma das carreiras em TI (tecnologia da informação)?",
+            dataCriado: ISODate('2017-04-26')
+        },
+        {
+            slug:"projeto-caelum-nas-faculdades",
+            titulo: "Projeto Caelum nas Faculdades",
+            conteudo: "Por enquanto nós estamos indo apenas até faculdades de São Paulo e cidades próximas, mas nós podemos agendar uma palestra remota! Podemos fazer via Skype ou Hangouts, como eu já fiz com o pessoal da UNIFEOB:",
+            dataCriado: ISODate('2019-06-04')
+        }
+    ]
+}})
+
+db.autores.update({nome: "Yuri Matheus"}, { $set: {
+    artigos: [
+        {
+            slug: "visualizando-dados-de-frequencia",
+            titulo: "Visualizando dados de frequência",
+            conteudo: "Precisamos saber o total de acessos em um dia, ou seja, temos que pegar cada dia da semana e ir somando 1 a cada vez que ele aparece na nossa lista. Há algumas formas de se fazer isso, uma é fazer um loop e ir iterando por cada valor no array, outra é utilizar a classe Counter da biblioteca de collections do Python.",
+            dataCriado: ISODate('2019-07-24')
+        },
+        {
+            slug:"entendendo-a-geracao-de-chaves-com-jpa",
+            titulo: "Entendendo a geração de chaves com JPA",
+            conteudo: "Sempre que escrevemos uma entidade utilizando JPA, precisamos definir qual a chave primária desta e geralmente, também colocamos uma estratégia para geração das chaves.",
+            dataCriado: ISODate('2019-08-21')
+        }
+    ]
+}})
+
+db.autores.update({nome: "Felipe Nascimento"}, { $set: {
+    artigos: [
+        {
+            slug: "criando-e-publicando-uma-biblioteca-javascript-no-npm",
+            titulo: "Criando e publicando uma biblioteca Javascript no NPM",
+            conteudo: "Pensando em uma filosofia open source onde todos podem fazer uso de soluções de maneira gratuita e colaborativa, o que vamos fazer é aprender a criar uma biblioteca Javascript e publicá-la no NPM, por onde todas as pessoas terão acesso.",
+            dataCriado: ISODate('2019-07-31')
+        }
+    ]
+}})

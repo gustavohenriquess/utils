@@ -1,0 +1,8 @@
+db.artigos.updateOne({
+    slug: "projeto-caelum-nas-faculdades"
+},
+{
+    $set: {
+        categorias: ["Inovação"]
+    }
+})
