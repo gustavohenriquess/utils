@@ -21,7 +21,7 @@ echo "🚀 Initializating in $1"
   git branch -M main
 fi
 
-echo "node_modules" >> .gitignore
+echo "node_modules \nconventional-script.sh" >> .gitignore
 if [ -z "$1" ]; then
 echo ""
 else
