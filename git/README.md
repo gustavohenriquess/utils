@@ -12,5 +12,5 @@
 
 ## [Conventional Commits](./conventional-commit)
 
-- [Talk](https://github.com/gustavohenriquess/talks/blob/main/docs/Git-Github.pptx)
+- [Talk](https://github.com/gustavohenriquess/talks/blob/main/docs/Git-Github.pdf)
 - [Script](./conventional-commit/conventional-script.sh)
