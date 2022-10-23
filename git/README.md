@@ -10,7 +10,7 @@
 - [Cz-cli](https://github.com/commitizen/cz-cli)
 - [Git Flow](https://github.com/nvie/gitflow/wiki/Linux)
 
-## (Conventional Commits)[./conventional-commit]
+## [Conventional Commits](./conventional-commit)
 
-- (Talk)[https://github.com/gustavohenriquess/talks/blob/main/docs/Git-Github.pptx]
-- (Script)[./conventional-commit/conventional-script.sh]
+- [Talk](https://github.com/gustavohenriquess/talks/blob/main/docs/Git-Github.pptx)
+- [Script](./conventional-commit/conventional-script.sh)
