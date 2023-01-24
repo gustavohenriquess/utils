@@ -20,7 +20,7 @@ fi
 
 echo "\n\n"
 echo "🚀 Initializing YARN"
-yarn init -yarn
+yarn init -y
 if [ -z "$1" ]; then
 echo ""
 else
