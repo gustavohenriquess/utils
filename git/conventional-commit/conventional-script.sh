@@ -77,5 +77,8 @@ fi
 
 
 cat << "EOF"
- @gustaavohenriques
+
+
+
+powered by @gustaavohenriques
 EOF
